@@ -76,6 +76,23 @@ For i = 2 To lastRow
 
 Next i
 
+lastrowforCF = ws.Cells(ws.Rows.Count, "J").End(xlUp).Row
+
+For c = 2 To lastrowforCF
+
+If ws.Cells(c, "J").Value > 0 Then
+
+ws.Cells(c, "J").Interior.ColorIndex = 4
+ws.Cells(c, "K").Interior.ColorIndex = 4
+
+Else
+ws.Cells(c, "J").Interior.ColorIndex = 3
+ws.Cells(c, "K").Interior.ColorIndex = 3
+
+End If
+
+Next c
+
 
 Next ws
 
@@ -155,6 +172,8 @@ ws.Cells(4, "Q").Value = GreatestStockVolume
 ws.Cells(2, "P").Value = TickerValue2
 ws.Cells(3, "P").Value = TickerValue1
 ws.Cells(4, "P").Value = TickerValue3
+
+ws.Columns("A:Q").AutoFit
 
 Next ws
 
