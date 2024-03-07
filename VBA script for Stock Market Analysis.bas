@@ -76,16 +76,21 @@ For i = 2 To lastRow
 
 Next i
 
+'Apply Conditional Formatting to Year change and Percent change columns
+
 lastrowforCF = ws.Cells(ws.Rows.Count, "J").End(xlUp).Row
 
 For c = 2 To lastrowforCF
 
 If ws.Cells(c, "J").Value > 0 Then
 
+'Highlights positive change in green
 ws.Cells(c, "J").Interior.ColorIndex = 4
 ws.Cells(c, "K").Interior.ColorIndex = 4
 
 Else
+
+'Highlights negative change in red
 ws.Cells(c, "J").Interior.ColorIndex = 3
 ws.Cells(c, "K").Interior.ColorIndex = 3
 
@@ -173,7 +178,7 @@ ws.Cells(2, "P").Value = TickerValue2
 ws.Cells(3, "P").Value = TickerValue1
 ws.Cells(4, "P").Value = TickerValue3
 
-ws.Columns("A:Q").AutoFit
+ws.Columns("A:P").AutoFit
 
 Next ws
 
