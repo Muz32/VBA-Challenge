@@ -1,4 +1,4 @@
-In this assignment I was tasked to analyse stock market data with given data (which was provided by edX Boot Camps LLC)for the years, 2018, 2019 and 2020. I used Visual Basic Application (VBA) in Microsoft Excel to develop the code for my analysis.  From the given data, my VBA script mainly calculates and projects the following information once the code is executed in the spreadsheet: 
+In this assignment I was tasked to analyse stock market data with given data (which was provided by edX Boot Camps LLC) for the years, 2018, 2019 and 2020. I used Visual Basic Application (VBA) in Microsoft Excel to develop the code for my analysis.  From the given data, my VBA script mainly calculates and projects the following information once the code is executed in the spreadsheet: 
 
 (1)change in stock price, 
 (2)percent change in stock price and,
